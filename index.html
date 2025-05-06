@@ -6,7 +6,7 @@
         <meta name="author" content="Connor Hall">
         <meta name="description" content="GPS">
         <meta name="keywords" content="web development, html, css, winnipeg, Canada">
-        <title>GPS</title>
+        <title>Mach Box</title>
         <link rel="icon" href="./assets/img/favicon.png" type="image/png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,18 +19,30 @@
         <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
         <script src="./assets/js/app.js" type="module"></script>
     </head>
+    <header>
+        <div class="container flex justify-between">
+            <h1>Mach Box</h1>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><button class="flex login">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
-        <header>
-            <div class="container flex justify-between">
-                <h1>PAGE TITLE</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Login</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <div class="container">
+            <section class="herobanner grid-center">
+                <h1>What you want, when you want it</h1>
+                <h2>See your deliverys progress with real-time tracking</h2>
+            </section>
+            <section>
+                <button class="track">Track</button>
+                <div class="map">
+                    
+                </div>
+            </section>
+        </div>
     </main>
 </html>
