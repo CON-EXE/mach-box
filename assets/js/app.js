@@ -3,7 +3,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ3VybGlua2F1ciIsImEiOiJjbHExYjM4cHUwNzE3MnBud25qNDlmc2VjIn0.Jeu9BD0h1vILAwXce8dQqw';
 
 const track = document.querySelector('.track');
-const mapDisplay = document.querySelector('.map');
+const preview = document.querySelector('.preview');
 
 const map = new mapboxgl.Map({
     container: 'map',
@@ -23,6 +23,7 @@ function getLocation(position) {
     let { longitude, latitude } = position.coords;
     map.setCenter([longitude, latitude]);
     marker.setLngLat([longitude, latitude]).addTo(map);
+    console.log(longitude, latitude);
 }
 
 function errorHandler() {
@@ -47,7 +48,6 @@ function displayPosition() {
 }
 
 track.addEventListener('click', () => {
+    preview.classList.add('hide');
     displayPosition();
 });
-
-// displayPosition();
