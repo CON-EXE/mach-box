@@ -119,4 +119,7 @@ section {
 footer {
     height: 60px;
     width: 100%;
+    place-content: center;
+    text-align: center;
+    color:#555
 }
